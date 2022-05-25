@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home Page</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+</head>
+<body>
+
+<main class="container">
+    <div class="p-4 m-4">
+        <div class="col-lg-5 mx-auto">
+    <h3 class="mb-3">Employee Details</h3>
+    <form method="post" action="">
+        {% csrf_token %}
+        <table class="table table-bordered">
+            {{form.as_table}}
+
+        </table>
+        <input type="submit" class="btn btn-info btn-sm">
+    </form>
+        </div>
+    </div>
+</main>
+
+</body>
+</html>
